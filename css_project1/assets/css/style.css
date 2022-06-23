@@ -152,7 +152,8 @@ div.latestpostDiv div.post img{
 
 div.latestpostDiv div.post_content span,
 div.postdetailDiv div.postcontentDiv div.postcontentheader span,
-div.postdetailDiv div.postcontentDiv span
+div.postdetailDiv div.postcontentDiv span,
+div.relatedpost div.related-post-block span
 
 {
 	font-size: 14px;
@@ -183,7 +184,9 @@ div.categoriesDiv hr,
 div.instagramDiv hr,
 div.followDiv hr,
 div.newsletterDiv hr,
-div.postcontentDiv div.postcontentheader hr{
+div.postcontentDiv div.postcontentheader hr,
+div.relatedpost hr,
+div.commentDiv div.commenttitle hr{
 	height: 3px;
 	background-color: #e1e1e1;
 	width: 30px;
@@ -220,7 +223,8 @@ div.popularpostDiv h3,
 div.categoriesDiv h3,
 div.instagramDiv h3,
 div.followDiv h3,
-div.newsletterDiv h3{
+div.newsletterDiv h3
+{
 	color: #151515;
 	text-transform: uppercase;
 	font-family: MontserratBold;
@@ -555,7 +559,9 @@ div.postdetailDiv div.postcontentheader{
 	padding: 50px 0px 20px;
 
 }
-div.postcontentDiv div.postcontentheader hr{
+div.postcontentDiv div.postcontentheader hr,
+div.relatedpost hr,
+div.commentDiv div.commenttitle hr{
 	margin: 0 auto;
 }
 div.postcontentDiv div.postcontentheader h3,
@@ -651,7 +657,7 @@ div.postdetailDiv div.postcontentDiv div.postcontentfooter div.socialList a{
 }
 div.postdetailDiv div.postauthor div.socialList a{
 	color: #717171;
-    margin-rightgog: 18px;
+    margin-right: 18px;
 
 }
 
@@ -673,6 +679,98 @@ div.postdetailDiv div.postauthor img{
     border-radius: 100%;
 
 }
+div.relatedpost{
+	padding: 67px 0;
+}
+div.relatedpost h3{
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: -0.4px;
+	text-transform: capitalize;
+	font-family: MontserratRegular;
+
+}
+div.relatedpost div.related-post-block h3{
+	margin: 0;
+}
+
+div.relatedpost div.related-post-block{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-column-gap: 30px;
+	margin-top: 23px;
+	text-align: center;
+}
+
+div.commentDiv div.commenttitle h2{
+	font-family: MontserratRegular;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    line-height: 1.875;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+div.commentDiv ol.commentlist,
+div.commentDiv ol.subcommentlist{
+	list-style: none;
+}
+div.commentDiv ol.commentlist li,
+div.commentDiv ol.subcommentlist li{
+	margin-bottom: 50px;
+}
+
+div.commentDiv ol.commentlist li div.comment{
+	display: flex;
+	margin-bottom: 50px;
+}
+
+div.commentDiv ol.commentlist li div.comment img{
+	width: 70px;
+	height: 70px;
+	object-fit: cover;
+    margin-right: 30px;
+    border-radius: 100%;
+}
+div.comment div p{
+	margin: 0;
+}
+div.comment div p:first-child{
+	font-weight: 400;
+	color: #151515;
+	font-size: 16px;
+	text-transform: capitalize;
+}
+
+div.comment div p:nth-child(2){
+	color: #a1a1a1;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+div.comment div p:nth-child(3){
+	color: #717171;
+    letter-spacing: 0.225px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+div.comment div p:last-child{
+	color: #151515;
+	text-transform: uppercase;
+	font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.18px;
+}
+
+
+
+
+
+
 
 
 
