@@ -1,0 +1,34 @@
+@font-face{
+	font-family: 'HindBold';
+	src: url('../fonts/Hind-Bold.ttf');
+}
+
+@font-face{
+	font-family: 'HindLight';
+	src: url('../fonts/Hind-Light.ttf');
+}
+
+@font-face{
+	font-family: 'HindMedium';
+	src: url('../fonts/Hind-Medium.ttf');
+}
+
+@font-face{
+	font-family: 'HindRegular';
+	src: url('../fonts/Hind-Regular.ttf');
+}
+
+@font-face{
+	font-family: 'MontserratBlack';
+	src: url('../fonts/Montserrat-Black.ttf');
+}
+
+@font-face{
+	font-family: 'MontserratBold';
+	src: url('../fonts/Montserrat-Bold.ttf');
+}
+
+@font-face{
+	font-family: 'MontserratRegular';
+	src: url('../fonts/Montserrat-Regular.ttf');
+}

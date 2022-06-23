@@ -1,0 +1,685 @@
+*{
+	font-family: HindRegular;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: MontserratBold;
+}
+
+.headerDiv{
+	display: flex;
+	align-items: center;
+	padding: 0 150px;
+
+}
+
+div.headerDiv div:nth-child(2),
+div.blogDiv div.latestpostDiv,
+div.postdetailDiv{
+	flex-grow: 2;
+	margin-right: 70px; 
+}
+
+div.headerDiv h1.logo{
+	text-align: center;
+}
+
+div.headerDiv i{
+	margin: 0 18px;
+}
+
+div.navigationDiv ul{
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+
+}
+
+div.navigationDiv ul li{
+	display: inline-block;
+}
+
+div.navigationDiv ul li a{
+	text-decoration: none;
+	padding: 0px 20px;
+	line-height: 50px;
+	color: #151515;
+	font-family: MontserratRegular;
+	letter-spacing: 0.325px;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+div.topnewsDiv{
+	padding-top: 10px;
+	padding-left: 150px;
+	width: 1170px;
+}
+
+div.topnews_left{
+	float: left;
+	/*margin-right: 10px;*/
+}
+div.topnews_left img{
+	width: 700px;
+	height: 510px;
+}
+
+div.topnews_right{
+	float: left;
+	margin-left: 10px;
+}
+
+div.topnews_right img{
+	height: 250px;
+	width: 450px;
+	margin-bottom: 6px;
+	object-fit: cover;
+}
+
+.clear{
+	clear: both;
+}
+
+div.topnewsDiv div.topnews_left div.topnews_content{
+	position: relative;
+	left: 30px;
+	bottom: 220px;
+	right: 30px;
+	color: #fff;
+	width: 700px;
+}
+
+div.topnewsDiv div.topnews_right div.topnews_content{
+	position: relative;
+	left: 30px;
+	bottom: 180px;
+	right: 30px;
+	color: #fff;
+	width: 300px;
+}
+
+
+div.topnewsDiv div.topnews_left div.topnews_content span,
+div.topnewsDiv div.topnews_right div.topnews_content span{
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.18px;
+	line-height: 2;
+}
+
+div.topnewsDiv div.topnews_left div.topnews_content h3{
+	font-size: 30px;
+	font-family: MontserratBold;
+	letter-spacing: 0.3px;
+}
+
+div.topnewsDiv div.topnews_left div.topnews_content a,
+div.topnewsDiv div.topnews_right div.topnews_content a {
+	text-decoration: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+div.topnewsDiv div.topnews_right div.topnews_content h3{
+	font-size: 20px;
+	font-family: MontserratBold;
+	letter-spacing: 0.3px;
+}
+
+div.topnewsDiv div.topnews_2,
+div.topnewsDiv div.topnews_3,
+div.topnewsDiv div.topnews_1{
+	height: 260px;
+}
+
+div.blogDiv{
+	display: flex;
+    padding: 50px 120px 50px 150px;
+}
+
+div.latestpostDiv div.post img{
+	width: 300px;
+	height: 200px;
+	float: left;
+	margin-right: 30px;
+}
+
+div.latestpostDiv div.post_content span,
+div.postdetailDiv div.postcontentDiv div.postcontentheader span,
+div.postdetailDiv div.postcontentDiv span
+
+{
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.18px;
+	line-height: 2;
+	color: #a1a1a1;
+}
+
+div.latestpostDiv div.post_content h3{
+	font-size: 24px;
+	letter-spacing: 0.5px;
+	font-weight: bold;
+	margin: 5px 0 16px;
+	padding-bottom: 18px;
+}
+
+div.latestpostDiv div.post_content h3 a{
+	text-decoration: none;
+	font-family: MontserratBold;
+	color: #151515;
+}
+
+div.latestpostDiv div.post_content hr,
+div.popularpostDiv hr,
+div.categoriesDiv hr,
+div.instagramDiv hr,
+div.followDiv hr,
+div.newsletterDiv hr,
+div.postcontentDiv div.postcontentheader hr{
+	height: 3px;
+	background-color: #e1e1e1;
+	width: 30px;
+	border: none;
+	margin: 0;
+}
+
+div.latestpostDiv div.post_content p{
+	color: #717171;
+	letter-spacing: 0.150px;
+    line-height: 1.6;
+    font-family: HindRegular;
+}
+
+div.latestpostDiv a{
+	text-decoration: none;
+	color: #a1a1a1;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+div.latestpostDiv div.post_content{
+	border-bottom: 1px solid #ebebeb;
+    width: 500px;
+    float: left;
+    padding-bottom: 20px;
+}
+
+div.blogDiv_right{
+	width: 250px;
+}
+
+div.popularpostDiv h3, 
+div.categoriesDiv h3,
+div.instagramDiv h3,
+div.followDiv h3,
+div.newsletterDiv h3{
+	color: #151515;
+	text-transform: uppercase;
+	font-family: MontserratBold;
+
+}
+
+div.post{
+	margin: 20px 0;
+}
+
+div.popularpostDiv div.post img{
+	width: 100px;
+	height: 80px;
+	float: left;
+	margin-right: 10px;
+}
+
+div.popularpostDiv div.post div.post_content h5{
+	color: #151515;
+    margin-bottom: 8px;
+    margin-top: 0;
+    font-family: MontserratRegular;
+}
+
+div.popularpostDiv div.post div.post_content p{
+	color: #a1a1a1;
+    font-size: 12px;
+    letter-spacing: 0.18px;
+    text-transform: uppercase;
+}
+
+div.categoriesDiv div.categoryLists{
+	display: grid;
+	grid-row-gap: 10px;
+	margin-top: 20px;
+}
+
+div.categoriesDiv div.categoryLists a{
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #f7f7f7;
+    color: #464646;
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+    transition: all 1s ease 0s;
+    /*transition:  property duration timing-function delay;*/
+    /*transition-property: width / all;
+	transition-duration: 2s;
+	transition-timing-function: 
+		ease / linear / ease-in / ease-out / ease-in-out /
+		cubic-bezier(n,n,n,n);
+	transition-delay: 1s;*/
+}	
+
+div.categoriesDiv div.categoryLists a:hover{
+	background-color: #464646;
+	color: #f7f7f7;
+
+}
+
+div.categoriesDiv, 
+div.instagramDiv,
+div.followDiv,
+div.newsletterDiv{
+	margin-top: 50px;
+}
+
+div.instagramDiv img{
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+}
+
+
+div.instagramDiv div.instagramList{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 5px;
+	margin-top: 20px;
+}
+
+div.followDiv div.followiconlist{
+	margin-top: 20px;
+	background-color: #f7f7f7;
+	padding: 15px 20px;
+	display: flex;
+	justify-content: center;
+}
+
+div.followDiv div.followiconlist div{
+	width: 28px;
+}
+
+div.newsletterDiv div.newsletterbox{
+	background-color: #f7f7f7;
+	padding: 35px;
+	text-align: center;
+	margin-top: 20px;
+
+}
+
+div.newsletterDiv div.newsletterbox i{
+	background-color: #fff;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	line-height: 3;
+}
+
+div.newsletterDiv div.newsletterbox h4{
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: -0.45px;
+	line-height: 1.6;
+}
+
+div.newsletterDiv div.newsletterbox p{
+	font-size: 12px;
+	color: #717171;
+    letter-spacing: 0.225px;
+}
+
+
+div.newsletterDiv div.newsletterbox input[type="email"]{
+	background-color: #ffffff;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	color: #717171;
+	outline: none;
+	padding: 10px 0;
+	text-align: center;
+	width: 100%;
+}
+
+div.newsletterDiv div.newsletterbox input[type="button"]{
+	background-color: #464646;
+	border: none;
+	border-radius: 0;
+	cursor: pointer;
+	color: #fff;
+	width: 100%;
+	padding: 9px 10px;
+    margin-top: 7px;
+    text-transform: uppercase;
+    transition: all 1s ease 0s;
+}
+
+div.newsletterDiv div.newsletterbox input[type="button"]:hover{
+	background-color: transparent;
+	color: #464646;
+	box-shadow: inset 0px 0px 2px 0px #464646;
+}
+
+div.latestpostDiv div.pagination{
+	margin-top: 30px;
+	text-align: center;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 90px 50px 50px 50px 50px 50px 90px;
+	color: #464646;
+	text-transform: uppercase;
+	justify-content: center;
+}
+
+div.latestpostDiv div.pagination div{
+	border-left: 1px solid #ebebeb;
+	cursor: pointer;
+	transition: all 1s ease 0s;
+	padding: 10px;
+}
+div.latestpostDiv div.pagination div:first-child{
+	border-left: none;
+}
+
+div.latestpostDiv div.pagination div:hover{
+	background-color: #ebebeb;
+    border-color: transparent;
+    color: #464646;
+}
+
+
+footer div.photogridList{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+	grid-gap: 0;
+	margin-top: 20px;
+}
+
+footer div.photogridList div{
+	width: 220px;
+}
+
+footer div.photogridList div img{
+	width: 240px;
+}
+
+footer div.socialList{
+	margin-top: 30px;
+	text-align: center;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(6, 150px);
+	justify-content: center;
+
+}
+footer div.socialList div{
+	color: #464646;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: HindBold;
+    cursor: pointer;
+    transition: all 1s ease 0s;
+}
+footer div.socialList div:hover{
+    opacity: 0.5;
+}
+footer div.copyright{
+	padding: 20px;
+	margin-top: 30px;
+}
+footer div.copyright hr,
+div.title hr {
+	height: 3px;
+	background-color: #e1e1e1;
+	width: 30px;
+	border: none;
+	margin: 0 auto;
+}
+footer div.copyright p {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 14px;
+    color: #a1a1a1;
+    letter-spacing: 0.195px;
+}
+
+div.slider{
+	margin: 0 auto;
+	max-width: 1150px;
+	padding: 20px 120px;
+}
+
+div.slider img{
+	width: 1150px;
+	height: 600px;
+	object-fit: cover;
+}
+
+
+div.title h1{
+	text-align: center;
+	color: #151515;
+	font-size: 36px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -0.9px;
+    margin-top: 50px;
+}
+
+div.title p{
+	color: #717171;
+    font-size: 15px;
+    letter-spacing: 0.225px;
+    line-height: 1.6;
+    padding: 0 170px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+form.contactForm{
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 20px 120px;
+}
+form.contactForm input#inputName,
+form.contactForm input#inputEmail,
+form.contactForm input#inputSubject,
+form.contactForm textarea#inputMessage{
+	background-color: #f7f7f7;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	color: #717171;
+	outline: none;
+	padding: 10px 30px;
+	min-height: 45px;
+	line-height: 1.6;
+}
+form.contactForm input#inputName,
+form.contactForm input#inputEmail{
+	width: 44%;
+}
+form.contactForm input#inputSubject{
+	width: 93.5%;
+	margin: 10px 0;
+}
+form.contactForm textarea#inputMessage{
+	width: 93.5%;
+	min-height: 120px;
+}
+form.contactForm #sendBtn{
+	background-color: #464646;
+    border: none;
+    box-shadow: none;
+    color: #ffffff;
+    font-family: 'MontserratBold';
+    font-size: 14px;
+    letter-spacing: -0.35px;
+    line-height: 20px;
+    margin-top: 10px;
+    outline: none;
+    padding: 10px 40px;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all 1s ease 0s;
+    float: right;
+    margin-right: 18px;
+    cursor: pointer;
+}
+form.contactForm #sendBtn:hover{
+	background-color: #f7f7f7;
+	    color: #151515;
+}
+div.postdetailDiv img{
+	width: 100%;
+}
+div.postdetailDiv div.postcontentheader{
+	text-align: center;
+	padding: 50px 0px 20px;
+
+}
+div.postcontentDiv div.postcontentheader hr{
+	margin: 0 auto;
+}
+div.postcontentDiv div.postcontentheader h3,
+div.postdetailDiv div.postauthor h4{
+	color: #151515;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -0.6px;
+    /*line-height: 1.25;*/
+}
+div.postcontentDiv div.postcontentheader p{
+	color: #717171;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+div.postdetailDiv div.postcontentbody p,
+div.postdetailDiv div.postcontentbody ul li,
+div.postdetailDiv div.postauthor p{
+	color: #717171;
+    letter-spacing: 0.150px;
+    line-height: 1.6;
+}
+div.postdetailDiv div.postcontentbody blockquote {
+    font-size: 22px;
+    margin: 40px 0px;
+    text-align: center;
+}
+
+div.postdetailDiv div.postcontentbody blockquote p{
+	font-family: 'MontserratBold';
+	color: #151515;
+    font-weight: bold;
+    letter-spacing: -0.55px;
+    margin-bottom: 0;
+}
+div.postdetailDiv div.postcontentbody blockquote span
+{
+	color: #717171;
+    font-family: 'MontserratBold';
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -0.4px;
+    line-height: 1.875;
+}
+div.postdetailDiv div.postcontentbody blockquote h4{
+	color: #151515;
+    font-family: 'MontserratBold';
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.55px;
+    line-height: 1.36;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+div.postdetailDiv div.postcontentDiv div.postcontentbody div{
+	text-align: center;
+}
+div.postdetailDiv div.postcontentDiv div.postcontentfooter{
+	border-bottom: 1px solid #e1e1e1;
+    display: inline-block;
+    width: 100%;
+    margin-top: 45px;
+}
+div.postdetailDiv div.postcontentDiv div.postcontentfooter div.tags a
+{
+	color: #a1a1a1;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0.21px;
+    margin-right: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+div.postdetailDiv div.postcontentDiv div.postcontentfooter div.tags{
+	float: left;
+}
+
+div.postdetailDiv div.postcontentDiv div.postcontentfooter div.socialList{
+	float: right;
+}
+div.postdetailDiv div.postcontentDiv div.postcontentfooter div.socialList a,
+div.postdetailDiv div.postauthor div.socialList a
+{
+    font-size: 13px;
+    text-decoration: none;
+}
+div.postdetailDiv div.postcontentDiv div.postcontentfooter div.socialList a{
+	color: #151515;
+    margin-left: 18px;
+
+}
+div.postdetailDiv div.postauthor div.socialList a{
+	color: #717171;
+    margin-rightgog: 18px;
+
+}
+
+div.postdetailDiv div.postauthor{
+	border-bottom: 1px solid #e1e1e1;
+    display: flex;
+    margin-top: 10px;
+    padding-bottom: 60px;
+    width: 100%;
+    align-items: center;
+}
+
+
+div.postdetailDiv div.postauthor img{
+	width: 170px;
+	height: 170px;
+	object-fit: cover;
+    margin-right: 30px;
+    border-radius: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
