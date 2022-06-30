@@ -1,10 +1,548 @@
-recordsflimproduction
-	-> assets
-		-> bootstrap (bootstrap zip extract folder)
-		-> fontawesome (fontawesome zip extract folder)
-		-> fonts (Source San Pro zip extract folder)
-		-> img (create new folder)
-		-> css (create new folder)
-			-> font.css (Source San Pro link လေးချိတ်ပေးပါ)
-			-> style.css
-	-> index.html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Record Flim Production </title>
+
+	<!-- Favicon -->
+	<link rel="icon" href="assets/img/favicon.png">
+	<link rel="apple-touch-icon" href="assets/img/favicon.png">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+	<!-- NAVBAR -->
+	<section>
+		<nav class="navbar navbar-expand-lg navbar-dark custom_bgcolor">
+		  	<div class="container">
+		    	<a class="navbar-brand" href="#">
+		    		<img src="assets/img/logo_white.png" width="60" height="40">
+		    	</a>
+		    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      		<span class="navbar-toggler-icon"></span>
+		    	</button>
+		    
+		    	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			      	<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			        	<li class="nav-item px-2">
+			          		<a class="nav-link active" aria-current="page" href="#">
+			          			Movie
+			          		</a>
+			        	</li>
+
+			        	<li class="nav-item px-2">
+			          		<a class="nav-link" href="#">TV Shows</a>
+			        	</li>
+
+			        	<li class="nav-item px-2">
+			          		<a class="nav-link" href="#"> Popular People </a>
+			        	</li>
+
+					    <li class="nav-item dropdown px-2">
+			          		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			            		More
+			          		</a>
+					        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					            <li><a class="dropdown-item" href="#">Popular</a></li>
+					            <li><a class="dropdown-item" href="#">Now Playing</a></li>
+					            <li><a class="dropdown-item" href="#">Upcoming</a></li>
+					            <li><a class="dropdown-item" href="#">Top Rated</a></li>
+					            <li><hr class="dropdown-divider"></li>
+					            <li><a class="dropdown-item" href="#">Support</a></li>
+
+					        </ul>
+					    </li>
+			      	</ul>
+			      	<ul class="navbar-nav">
+			      		<li class="nav-item px-1">
+			      			<button type="button" class="btn btn-link nav-link" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Can't find a movie or TV show? Login to create it.">
+							  <i class="fa-solid fa-plus"></i>
+							</button>
+			      			
+			      		</li>
+			      		<li class="nav-item px-1 my-auto">
+			      			<button class="btn btn-sm btn-outline-light smallfont" type="button">EN</button>
+			      		</li>
+			      		<li class="nav-item px-1">
+			      			<a href="" class="nav-link">
+			      				Login
+			      			</a>
+			      		</li>
+			      		<li class="nav-item px-1">
+			      			<a href="" class="nav-link">
+			      				Join Us
+			      			</a>
+			      		</li>
+			      		<li class="nav-item px-1">
+			      			<a href="" class="nav-link">
+			      				 <i class="fa-solid fa-magnifying-glass"></i>
+			      			</a>
+			      		</li>
+			      	</ul>
+		    	</div>
+		  	</div>
+		</nav>
+	</section>
+
+
+	<!-- SLIDER CAROUSEL -->
+	<section>
+		<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+		  	<div class="carousel-indicators">
+		    	<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    	<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    	<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  	</div>
+		  	<div class="carousel-inner">
+		    	<div class="carousel-item active">
+		      		<img src="assets/img/slider1.jpeg" class="d-block w-100" alt="...">
+		      		<div class="carousel-caption d-none d-md-block">
+		        		<h1 class="display-5">Doctor Strange in the Multiverse of Madness</h1>
+		        		<p class="h5">Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.</p>
+		      		</div>
+		    	</div>
+		    	<div class="carousel-item">
+		      		<img src="assets/img/slider2.jpeg" class="d-block w-100" alt="...">
+		      		<div class="carousel-caption d-none d-md-block">
+		        		<h1 class="display-5">Money Heist: Korea - Joint Economic Area</h1>
+		        		<p class="h5">Disguised under the shadows of a mask, a crew of desperados band together under the leadership of a criminal mastermind known only as “The Professor” to pull off the biggest heist Korea has ever seen.</p>
+		      		</div>
+		    	</div>
+		    	<div class="carousel-item">
+		      		<img src="assets/img/slider3.jpeg" class="d-block w-100" alt="...">
+		      		<div class="carousel-caption d-none d-md-block">
+		        		<h1 class="display-5">Man Vs Bee</h1>
+		        		<p class="h5">A man finds himself at war with a bee while house-sitting a luxurious mansion. Who will win, and what irreparable damage will be done in the process?</p>
+		      		</div>
+		    	</div>
+		  	</div>
+		  	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+		    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    	<span class="visually-hidden">Previous</span>
+		  	</button>
+		  	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+		    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    	<span class="visually-hidden">Next</span>
+		  	</button>
+		</div>
+	</section>
+
+	<!-- POPULAR SECTION -->
+	<section class="my-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-8 col-lg-8 col-md-5 col-sm-12 col-12">
+					<h1> What's Popular </h1>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-7 col-sm-12 col-12">
+					<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+					  	<li class="nav-item" role="presentation">
+					    	<button class="nav-link active" id="pills-streaming-tab" data-bs-toggle="pill" data-bs-target="#pills-streaming" type="button" role="tab" aria-controls="pills-streaming" aria-selected="true">Streaming</button>
+					  	</li>
+					  	<li class="nav-item" role="presentation">
+					    	<button class="nav-link" id="pills-ontv-tab" data-bs-toggle="pill" data-bs-target="#pills-ontv" type="button" role="tab" aria-controls="pills-ontv" aria-selected="false">On TV</button>
+					  	</li>
+					  	<li class="nav-item" role="presentation">
+					    	<button class="nav-link" id="pills-forrent-tab" data-bs-toggle="pill" data-bs-target="#pills-forrent" type="button" role="tab" aria-controls="pills-forrent" aria-selected="false">For Rent</button>
+					  	</li>
+					  	<li class="nav-item" role="presentation">
+					    	<button class="nav-link" id="pills-intheater-tab" data-bs-toggle="pill" data-bs-target="#pills-intheater" type="button" role="tab" aria-controls="pills-intheater" aria-selected="false">In Theaters</button>
+					  	</li>
+					  	
+					</ul>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="tab-content" id="pills-tabContent">
+					  	<div class="tab-pane fade show active" id="pills-streaming" role="tabpanel" aria-labelledby="pills-streaming-tab" tabindex="0">
+					  		<div class="row">
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie1.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">Hotel Transylvania: Transformania</h5>
+										    	<p class="card-text">Feb 25, 2022</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie2.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">Obi-Wan Kenobi</h5>
+										    	<p class="card-text">May 06, 2022</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie3.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">Venom: Let There Be Carnage</h5>
+										    	<p class="card-text">Sep 30, 2022</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie4.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">Chip 'n Dale: Rescue Rangers</h5>
+										    	<p class="card-text">May 18, 2022</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie5.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">The Takedown</h5>
+										    	<p class="card-text">May 06, 2022</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie6.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">The Walking Dead</h5>
+										    	<p class="card-text">Oct 31, 2010</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+					  		</div>
+					  	</div>
+					  	<div class="tab-pane fade" id="pills-ontv" role="tabpanel" aria-labelledby="pills-ontv-tab" tabindex="0">
+					  		<div class="row">
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie7.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">The Boys</h5>
+										    	<p class="card-text">Jul 25, 2019</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie8.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">Ms. Marvel</h5>
+										    	<p class="card-text">Jun 08, 2022</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie9.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">Stranger Things</h5>
+										    	<p class="card-text">Jul 15, 2016</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie10.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">Pantanal</h5>
+										    	<p class="card-text">Mar 28, 2022</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie11.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">Cara e Coragem</h5>
+										    	<p class="card-text">May 30, 2022</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie12.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">Love Island Spain</h5>
+										    	<p class="card-text">Apr 11, 2021</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+					  		</div>
+					  	</div>
+					  	<div class="tab-pane fade" id="pills-forrent" role="tabpanel" aria-labelledby="pills-forrent-tab" tabindex="0">
+					  		<div class="row">
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie13.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">Fantastic Beasts: The Secrets of Dumbledore</h5>
+										    	<p class="card-text">Apr 06, 2022</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie14.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">Sonic the Hedgehog 2</h5>
+										    	<p class="card-text">Mar 30, 2022</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie15.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">Morbius</h5>
+										    	<p class="card-text">Mar 30, 2022</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie16.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">The Lost City</h5>
+										    	<p class="card-text">Mar 24, 2022</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie17.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">Spider-Man: No Way Home</h5>
+										    	<p class="card-text">Dec 15, 2021</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie18.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">Uncharted</h5>
+										    	<p class="card-text">Feb 10, 2022</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+					  		</div>
+					  	</div>
+					  	<div class="tab-pane fade" id="pills-intheater" role="tabpanel" aria-labelledby="pills-intheater-tab" tabindex="0">
+					  		<div class="row">
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie19.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">Jurassic World Dominion</h5>
+										    	<p class="card-text">Jun 10, 2022</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie20.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">The Black Phone</h5>
+										    	<p class="card-text">Jun 24, 2022</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie21.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">Last Year</h5>
+										    	<p class="card-text">Jun 17, 2022</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie22.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">Top Gun: Maverick</h5>
+										    	<p class="card-text">May 27, 2022</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie23.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">Minions: The Rise of Gru</h5>
+										    	<p class="card-text">Jul 01, 2022</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+
+					  			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+					  				<a href="moviedetail.html" class="text-decoration-none main_color movies">
+						  				<div class="card border-0">
+										  	<img src="assets/img/movie24.jpeg" class="card-img-top" alt="...">
+										  	<div class="card-body">
+										    	<h5 class="card-title">Elvis</h5>
+										    	<p class="card-text">Jun 24, 2022</p>
+										  	</div>
+										</div>
+									</a>
+					  			</div>
+					  		</div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FREE TO WATCH SECTION -->
+
+	<!-- LATEST TRAILER -->
+	<section class="my-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-8 col-lg-8 col-md-5 col-sm-12 col-12">
+					<h1> Latest Trailers </h1>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-7 col-sm-12 col-12">
+					<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+					  	<li class="nav-item" role="presentation">
+					    	<button class="nav-link active" id="pills-trailer-streaming-tab" data-bs-toggle="pill" data-bs-target="#pills-trailer-streaming" type="button" role="tab" aria-controls="pills-trailer-streaming" aria-selected="true">Streaming</button>
+					  	</li>
+					  	<li class="nav-item" role="presentation">
+					    	<button class="nav-link" id="pills-trailer-ontv-tab" data-bs-toggle="pill" data-bs-target="#pills-trailer-ontv" type="button" role="tab" aria-controls="pills-trailer-ontv" aria-selected="false">On TV</button>
+					  	</li>
+					  	<li class="nav-item" role="presentation">
+					    	<button class="nav-link" id="pills-trailer-forrent-tab" data-bs-toggle="pill" data-bs-target="#pills-trailer-forrent" type="button" role="tab" aria-controls="pills-trailer-forrent" aria-selected="false">For Rent</button>
+					  	</li>
+					  	<li class="nav-item" role="presentation">
+					    	<button class="nav-link" id="pills-trailer-intheater-tab" data-bs-toggle="pill" data-bs-target="#pills-trailer-intheater" type="button" role="tab" aria-controls="pills-trailer-intheater" aria-selected="false">In Theaters</button>
+					  	</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="tab-content" id="pills-tabContent">
+					  	<div class="tab-pane fade show active" id="pills-trailer-streaming" role="tabpanel" aria-labelledby="pills-trailer-streaming-tab" tabindex="0">
+					  		<div class="row g-3">
+					  			<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+					  				<div class="ratio ratio-21x9">
+									  	<iframe width="560" height="500" src="https://www.youtube.com/embed/2l4tuNYvPa4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="rounded-4"></iframe>
+									</div>
+					  			</div>
+					  			<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+					  				<div class="ratio ratio-21x9">
+									  	<iframe width="560" height="315" src="https://www.youtube.com/embed/BtbLYmAavFI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="rounded-4"></iframe>
+									</div>
+					  			</div>
+					  			<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+					  				<div class="ratio ratio-21x9">
+									  	<iframe width="560" height="315" src="https://www.youtube.com/embed/aOYGfmBQ2ys?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="rounded-4"></iframe>
+									</div>
+					  			</div>
+					  			<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+					  				<div class="ratio ratio-21x9">
+									  	<iframe width="560" height="315" src="https://www.youtube.com/embed/sBEvEcpnG7k?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="rounded-4"></iframe>
+									</div>
+					  			</div>
+					  		</div>
+					  	</div>
+					  	<div class="tab-pane fade" id="pills-trailer-ontv" role="tabpanel" aria-labelledby="pills-trailer-ontv-tab" tabindex="0">
+					  		
+					  	</div>
+					  	<div class="tab-pane fade" id="pills-trailer-forrent" role="tabpanel" aria-labelledby="pills-trailer-forrent-tab" tabindex="0">
+					  		
+					  	</div>
+					  	<div class="tab-pane fade" id="pills-trailer-intheater" role="tabpanel" aria-labelledby="pills-trailer-intheater-tab" tabindex="0">
+					  		
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- TRENDING SECTION -->
+
+
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript">
+		const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+		const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+	</script>
+</body>
+</html>

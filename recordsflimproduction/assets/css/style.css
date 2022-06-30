@@ -1,0 +1,58 @@
+*{
+	font-family: SourceSanPro_Regular;
+}
+h1,h2,h3,h4,h5{
+	font-family: SourceSanPro_Black;
+}
+
+.custom_bgcolor{
+	background-color: #0F172B;
+}
+
+.carousel-inner .carousel-item img {
+    height: 70vh;
+    object-fit: cover;
+}
+
+.smallfont{
+    font-size: 12px;
+}
+
+.nav-pills .nav-link{
+    color: #3B3C36;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link
+{
+    background-color: #0F172B;
+    color: #FDEC03;
+}
+
+.main_color{
+    color: #0F172B;
+}
+
+.movies:hover h5{
+    color: #ffd600;
+    transition: all 1s ease 0s;
+}
+
+.movies:hover p{
+    color: #808080;
+    transition: all 1s ease 0s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
