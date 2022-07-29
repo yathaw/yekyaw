@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Record Flim Production </title>
+
+	<!-- Favicon -->
+	<link rel="icon" href="assets/img/favicon.png">
+	<link rel="apple-touch-icon" href="assets/img/favicon.png">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+	<!-- NAVBAR -->
+	<section>
+		<nav class="navbar navbar-expand-lg navbar-dark custom_bgcolor">
+		  	<div class="container">
+		    	<a class="navbar-brand" href="index.html">
+		    		<img src="assets/img/logo_white.png" width="60" height="40">
+		    	</a>
+		    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      		<span class="navbar-toggler-icon"></span>
+		    	</button>
+		    
+		    	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			      	<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			        	<li class="nav-item px-2">
+			          		<a class="nav-link active" aria-current="page" href="#">
+			          			Movie
+			          		</a>
+			        	</li>
+
+			        	<li class="nav-item px-2">
+			          		<a class="nav-link" href="#">TV Shows</a>
+			        	</li>
+
+			        	<li class="nav-item px-2">
+			          		<a class="nav-link" href="#"> Popular People </a>
+			        	</li>
+
+					    <li class="nav-item dropdown px-2">
+			          		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			            		More
+			          		</a>
+					        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					            <li><a class="dropdown-item" href="popular.html">Popular</a></li>
+					            <li><a class="dropdown-item" href="#">Now Playing</a></li>
+					            <li><a class="dropdown-item" href="#">Upcoming</a></li>
+					            <li><a class="dropdown-item" href="#">Top Rated</a></li>
+					            <li><hr class="dropdown-divider"></li>
+					            <li><a class="dropdown-item" href="#">Support</a></li>
+
+					        </ul>
+					    </li>
+			      	</ul>
+			      	<ul class="navbar-nav">
+			      		<li class="nav-item px-1">
+			      			<button type="button" class="btn btn-link nav-link" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Can't find a movie or TV show? Login to create it.">
+							  <i class="fa-solid fa-plus"></i>
+							</button>
+			      			
+			      		</li>
+			      		<li class="nav-item px-1 my-auto">
+			      			<button class="btn btn-sm btn-outline-light smallfont" type="button">EN</button>
+			      		</li>
+			      		<li class="nav-item px-1">
+			      			<a href="login.html" class="nav-link">
+			      				Login
+			      			</a>
+			      		</li>
+			      		<li class="nav-item px-1">
+			      			<a href="signup.html" class="nav-link">
+			      				Join Us
+			      			</a>
+			      		</li>
+			      		<li class="nav-item px-1">
+			      			<a href="" class="nav-link">
+			      				 <i class="fa-solid fa-magnifying-glass"></i>
+			      			</a>
+			      		</li>
+			      	</ul>
+		    	</div>
+		  	</div>
+		</nav>
+	</section>
+
+	<ul class="nav justify-content-center">
+	  	<li class="nav-item dropdown">
+	    	<a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        		Overview
+      		</a>
+	        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="#">Main</a></li>
+	            <li><a class="dropdown-item" href="#">Alternative Titles</a></li>
+	            <li><a class="dropdown-item" href="#">Cast & Crew</a></li>
+	            <li><a class="dropdown-item" href="#">Relase Dates</a></li>
+	            <li><a class="dropdown-item" href="#">Translation</a></li>
+	            <li><a class="dropdown-item" href="#">Watch Now</a></li>
+
+	            <li><hr class="dropdown-divider"></li>
+	            <li><a class="dropdown-item" href="#">Changes</a></li>
+
+	        </ul>
+	  	</li>
+	  	<li class="nav-item">
+	    	<a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        		Media
+      		</a>
+	        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li class="">
+	            	<a class="dropdown-item" href="#">
+					    Backdrops
+					    <span class="text-muted smallfont float-end">21</span>
+	            	</a>
+	            </li>
+
+	            <li>
+	            	<a class="dropdown-item" href="#">
+	            		Logos
+	            		<span class="text-muted smallfont float-end">9</span>
+	            	</a>
+	            </li>
+	            <li>
+	            	<a class="dropdown-item" href="#">
+	            		Posters
+	            		<span class="text-muted smallfont float-end">21</span>
+	            	</a>
+	            </li>
+	            <li>
+	            	<a class="dropdown-item" href="#">Viedos</a>
+
+	            </li>
+	        </ul>
+	  	</li>
+	  	<li class="nav-item">
+	    	<a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        		Fandom
+      		</a>
+	        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="#">Discussions</a></li>
+	            <li><a class="dropdown-item" href="#">Reviews</a></li>
+	        </ul>
+	  	</li>
+	  	<li class="nav-item">
+	    	<a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        		Share
+      		</a>
+	        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="#">Share Link</a></li>
+	            <li><a class="dropdown-item" href="#">Facebook</a></li>
+	            <li><a class="dropdown-item" href="#">Tweet</a></li>
+	        </ul>
+	  	</li>
+	</ul>
+
+	<!-- MOVIE OVERVIEW BANNER -->
+	<section id="moviedetailbanner">
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
+					<a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						<div class="card border-0 shadow mb-5 bg-body rounded">
+						  	<img src="assets/img/movie1.jpeg" class="card-img-top" alt="...">
+						  	<div class="card-footer custom_bgcolor primevideo ">
+						    	<div class="d-flex position-relative align-items-center justify-content-center">
+						    		<img src="assets/img/primevideo.jpeg" class="flex-shrink-0 me-3 rounded">
+						    		<div class="text-white">
+						    			<p class="mb-0 smallfont"> Now Streaming </p>
+						    			<p class="fs-6 mb-0">Watch Now </p>
+						    		</div>
+						    	</div>
+						  	</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12 py-5">
+					<div>
+						<h3>
+							<span class="fw-bolder text-white"> Hotel Transylvania: Transformania </span>
+							<span class="fw-lighter text-white"> (2022) </span>
+						</h3>
+						<p class="text-white">
+							<span> PG </span>
+							<span> 02/25/2022 (US) </span>
+							<span class="smallfont"> <i class="fa-solid fa-circle fa-2xs"></i> </span> 
+							<span> <a href="#" class="text-decoration-none text-white"> Animation </a>, </span>
+							<span> <a href="#" class="text-decoration-none text-white"> Family </a>, </span>
+							<span> <a href="#" class="text-decoration-none text-white"> Fantasy </a>, </span>
+							<span> <a href="#" class="text-decoration-none text-white"> Comedy </a>, </span>
+							<span> <a href="#" class="text-decoration-none text-white"> Adventure </a> </span>
+							<span class="smallfont"> <i class="fa-solid fa-circle fa-2xs"></i> </span> 
+							<span> 1hr 27m </span>
+						</p>
+					</div>
+					<div class="my-3">
+						<span class="fa-stack ">
+						    <i class="fa-solid fa-circle fa-stack-2x"></i>
+						    <i class="fa-solid fa-list fa-stack fa-stack-1x fa-inverse"></i>
+						</span>
+
+
+						<span class="fa-stack">
+						    <i class="fa-solid fa-circle fa-stack-2x"></i>
+						    <i class="fa-solid fa-heart fa-stack-1x fa-inverse"></i>
+						</span>
+
+						<span class="fa-stack">
+						    <i class="fa-solid fa-circle fa-stack-2x"></i>
+						    <i class="fa-solid fa-bookmark fa-stack-1x fa-inverse"></i>
+						</span>
+
+						<span class="fa-stack">
+						    <i class="fa-solid fa-circle fa-stack-2x"></i>
+						    <i class="fa-solid fa-star fa-stack-1x fa-inverse"></i>
+						</span>
+
+						<span>
+							<a href="" class="text-decoration-none text-white">
+								<i class="fa-solid fa-play"></i>
+								Play Trailer
+							</a>
+						</span>
+					</div>
+
+					<div>
+						<p class="fst-italic smallfont text-white"> Change can be scary. </p>
+						<div class="row text-white">
+							<div class="col-12">
+								<p class="fs-5"> Ovewview </p>
+								<p> When Van Helsing's mysterious invention, the "Monsterfication Ray," goes haywire, Drac and his monster pals are all transformed into humans, and Johnny becomes a monster. In their new mismatched bodies, Drac and Johnny must team up and race across the globe to find a cure before it's too late, and before they drive each other crazy. </p>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+								<a href="#" class="fs-6 text-decoration-none fw-bolder text-white"> Genndy Tartakovsky </a>
+								<p class="smallfont"> Screenplay, Story </p>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+								<a href="#" class="fs-6 text-decoration-none fw-bolder text-white"> Derek Drymon </a>
+								<p class="smallfont"> Director </p>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+								<a href="#" class="fs-6 text-decoration-none fw-bolder text-white"> Jennifer Kluska </a>
+								<p class="smallfont"> Director </p>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+								<a href="#" class="fs-6 text-decoration-none fw-bolder text-white"> Genndy Tartakovsky </a>
+								<p class="smallfont"> Screenplay, Story </p>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+								<a href="#" class="fs-6 text-decoration-none fw-bolder text-white"> Amos Vernon</a>
+								<p class="smallfont"> Screenplay </p>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+								<a href="#" class="fs-6 text-decoration-none fw-bolder text-white"> Nunzio Randazzo </a>
+								<p class="smallfont"> Screenplay </p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- MOVIE DETAIL CONTENT -->
+	<section class="py-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12">
+					<!-- TOP BILLED CAST -->
+					<h4 class="mb-3"> Top Billed Cast </h4>
+					<div class="row g-4">
+						<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+							<div class="card h-100 border-light shadow-sm bg-body rounded">
+							  	<img src="assets/img/actor1.jpeg" class="card-img-top" alt="...">
+							  	<div class="card-body">
+							    	<h6 class="card-title fw-bolder">Selena Gomez</h6>
+							    	<p class="card-text smallfont">Mavis Dracula (voice)</p>
+							  	</div>
+							</div>
+						</div>
+
+						<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+							<div class="card h-100 border-light shadow-sm bg-body rounded">
+							  	<img src="assets/img/actor2.jpeg" class="card-img-top" alt="...">
+							  	<div class="card-body">
+							    	<h6 class="card-title fw-bolder">Andy Samberg</h6>
+							    	<p class="card-text smallfont">Johnny Loughran (voice)</p>
+							  	</div>
+							</div>
+						</div>
+
+						<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+							<div class="card h-100 border-light shadow-sm bg-body rounded">
+							  	<img src="assets/img/actor3.jpeg" class="card-img-top" alt="...">
+							  	<div class="card-body">
+							    	<h6 class="card-title fw-bolder">Kathryn Hahn</h6>
+							    	<p class="card-text smallfont">Ericka Van Helsing (voice)</p>
+							  	</div>
+							</div>
+						</div>
+
+						<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+							<div class="card h-100 border-light shadow-sm bg-body rounded">
+							  	<img src="assets/img/actor4.jpeg" class="card-img-top" alt="...">
+							  	<div class="card-body">
+							    	<h6 class="card-title fw-bolder">Jim Gaffigan</h6>
+							    	<p class="card-text smallfont">Van Helsing (voice)</p>
+							  	</div>
+							</div>
+						</div>
+
+						<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+							<div class="card h-100 border-light shadow-sm bg-body rounded">
+							  	<img src="assets/img/actor5.jpeg" class="card-img-top" alt="...">
+							  	<div class="card-body">
+							    	<h6 class="card-title fw-bolder">Steve Buscemi</h6>
+							    	<p class="card-text smallfont">Wayne (voice)</p>
+							  	</div>
+							</div>
+						</div>
+
+						<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+							<div class="card h-100 border-light shadow-sm bg-body rounded">
+							  	<img src="assets/img/actor6.jpeg" class="card-img-top" alt="...">
+							  	<div class="card-body">
+							    	<h6 class="card-title fw-bolder">Molly Shannon</h6>
+							    	<p class="card-text smallfont">Wanda (voice)</p>
+							  	</div>
+							</div>
+						</div>
+
+					</div>
+
+					<h6 class="mt-5 mb-3"> Full Cast & Crew </h6>
+					<hr class="border-secondary opacity-25">
+
+					<h4 class="my-4 d-inline-block"> Social </h4>
+					
+					<div class="d-inline-block ms-3">
+						<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+						  	<li class="nav-item" role="presentation">
+						    	<button class="nav-link active" id="pills-review-tab" data-bs-toggle="pill" data-bs-target="#pills-review" type="button" role="tab" aria-controls="pills-review" aria-selected="true">Review </button>
+						  	</li>
+						  	<li class="nav-item" role="presentation">
+						    	<button class="nav-link" id="pills-discussions-tab" data-bs-toggle="pill" data-bs-target="#pills-discussions" type="button" role="tab" aria-controls="pills-discussions" aria-selected="false">Discussions</button>
+						  	</li>
+						</ul>
+					</div>
+
+					<div class="tab-content" id="pills-tabContent">
+					  	<div class="tab-pane fade show active" id="pills-review" role="tabpanel" aria-labelledby="pills-review-tab" tabindex="0">
+					  		<!-- Stretched link -->
+					  		<div class="col-12 shadow-sm p-3 bg-body rounded">
+					  			<div class="d-flex position-relative">
+								  	<img src="assets/img/user1.jpeg" class="flex-shrink-0 me-3 h-25 rounded-circle" alt="...">
+								  	<div>
+								    	<h5 class="mt-0">A review by Chris Sawin</h5>
+								    	<p class="smallfont">Written by Chris Sawin on January 22, 2022</p>
+
+								    	<p class="lh-sm">
+								    		<span class="fst-italic"> Hotel Transylvania: </span> Transformania had a lot of obstacles relating to its release and after viewing the film you can understand why. It’s a lukewarm sendoff that mostly feels like a lethargic attempt to recapture its former glory. It’s built around an entertaining concept that it doesn’t fully capitalize on. It ultimately obliterates character traits for trite gags and cliché punch lines.
+								    	</p>
+								    	<p>
+								    		<span class="fw-bold"> Full review: </span> https://hubpages.com/entertainment/Hotel-Transylvania-Transformania-2022-Review-A-Monstrous-Monstrosity
+								    	</p>
+								  	</div>
+								</div>
+					  		</div>
+					  	</div>
+					  	<div class="tab-pane fade" id="pills-discussions" role="tabpanel" aria-labelledby="pills-discussions-tab" tabindex="0">
+					  		<p> There are no discussions for Hotel Transylvania: Transformania. Login to be first! </p>
+					  	</div>
+					</div>
+
+
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
+					<div class="row mb-3">
+						<div class="col-2">
+							<a href="#" class="text-decoration-none text-dark" data-bs-toggle="tooltip" title="Visit Facebook">
+								<i class="fa-brands fa-facebook-square"></i> 
+							</a>
+						</div>
+						<div class="col-2">
+							<a href="#" class="text-decoration-none text-dark" data-bs-toggle="tooltip" title="Visit Twitter">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+						</div>
+						<div class="col-2 border-end">
+							<a href="#" class="text-decoration-none text-dark" data-bs-toggle="tooltip" title="Visit Instagram">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+						</div>
+						<div class="col-2 border-end text-center">
+							<a href="#" class="text-decoration-none text-dark" data-bs-toggle="tooltip" title="Visit Justwatch">
+								<i class="fa-solid fa-play"></i>
+							</a>
+						</div>
+						<div class="col-2">
+							<a href="#" class="text-decoration-none text-dark" data-bs-toggle="tooltip" title="Visit Home Page">
+								<i class="fa-solid fa-link"></i>
+							</a>
+						</div>
+					</div>
+
+					<div class="my-2">
+						<p class="p-0 m-0"> Status </p>
+						<p class="p-0 smallfont"> Released </p>
+					</div>
+
+					<div class="my-2">
+						<p class="p-0 m-0"> Original Language </p>
+						<p class="p-0 smallfont"> English </p>
+					</div>
+
+					<div class="my-2">
+						<p class="p-0 m-0"> Budget </p>
+						<p class="p-0 smallfont"> - </p>
+					</div>
+
+					<div class="my-2">
+						<p class="p-0 m-0"> Revenue </p>
+						<p class="p-0 smallfont"> - </p>
+					</div>
+
+					<div class="my-2">
+						<h6> Keywords </h6>
+
+						<span class="badge text-bg-secondary opacity-50">monster</span>
+						<span class="badge text-bg-secondary opacity-50">vampire</span>
+						<span class="badge text-bg-secondary opacity-50">transformation</span>
+						<span class="badge text-bg-secondary opacity-50">aftercreditsstinger</span>
+						<span class="badge text-bg-secondary opacity-50">duringcreditsstinger</span>
+						<span class="badge text-bg-secondary opacity-50">human</span>
+
+						<hr class="border-secondary opacity-25">
+					</div>
+
+					<div class="my-2">
+						<h6> Content Score </h6>
+
+						<div class="alert alert-success d-flex align-items-center" role="alert">
+						  	<i class="fa-solid fa-star fa-xl text-warning"></i>
+						  	<div class="ms-3">
+							  	<h5 class="alert-heading">
+							    	100
+							  	</h5>
+							  	<p> Yes! Looking good! </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="my-2">
+						<h6> Top Contributors </h6>
+
+						<div class="d-flex align-items-center my-3">
+						  	<div class="">
+						    	<img src="assets/img/user1.jpeg" alt="..." class="w-75 rounded-circle">
+						  	</div>
+						  	<div class="flex-shrink-1 w-100">
+						  		<p class="mb-0 p-0"> 96 </p>
+						    	<p class="smallfont"> raze464 </p>
+						  	</div>
+						</div>
+
+						<div class="d-flex align-items-center my-3">
+						  	<div class="">
+						    	<img src="assets/img/user2.jpeg" alt="..." class="w-75 rounded-circle">
+						  	</div>
+						  	<div class="flex-shrink-1 w-100">
+						  		<p class="mb-0 p-0"> 39 </p>
+						    	<p class="smallfont"> itstimetomeetthemuppets </p>
+						  	</div>
+						</div>
+
+						<div class="d-flex align-items-center my-3">
+						  	<div class="">
+						    	<img src="assets/img/user3.jpeg" alt="..." class="w-75 rounded-circle">
+						  	</div>
+						  	<div class="flex-shrink-1 w-100">
+						  		<p class="mb-0 p-0"> 25 </p>
+						    	<p class="smallfont"> Rango2813 </p>
+						  	</div>
+						</div>
+
+						<div class="d-flex align-items-center my-3">
+						  	<div class="">
+						    	<img src="assets/img/user-4.jpeg" alt="..." class="w-75 rounded-circle">
+						  	</div>
+						  	<div class="flex-shrink-1 w-100">
+						  		<p class="mb-0 p-0"> 20 </p>
+						    	<p class="smallfont"> heli5m </p>
+						  	</div>
+						</div>
+
+						<a href="#" class="text-decoration-none text-muted"> View Edit History </a>
+
+					</div>
+
+					<div class="my-2">
+						<h6 class="my-3"> Popularity Trend </h6>
+
+						<div class="d-grid gap-2">
+						  	<button class="btn custom_bgcolor text-warning text-uppercase rounded-pill" type="button">
+						  		<i class="fa-solid fa-lock"></i> Login To Edit
+						  	</button>
+						</div>
+
+						<div class="mt-4 text-secondary">
+							<i class="fa-solid fa-keyboard"></i>
+							<p class="d-inline-block"> Keyboard Shortcuts </p>
+						</div>
+
+						<div class=" text-dark">
+							<i class="fa-solid fa-triangle-exclamation"></i>
+							<p class="d-inline-block"> Login to report an issue </p>
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="custom_bgcolor py-5 text-white">
+		<div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                    <div class="text-center">
+                        <img src="assets/img/logo_white.png" alt="" class="img-fluid w-50 ">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <a href="signup.html" class="btn btn-light mt-3"> Join The Community </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
+                    <h5 class="text-uppercase"> The Basic </h5>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> About Company </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Contact Us </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none">Support Forums </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> API </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> System Status </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
+                    <h5 class="text-uppercase"> GET INVOLVED </h5>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Contribution Bible </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Add New Movie </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Add New TV Show </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
+                    <h5 class="text-uppercase"> Community </h5>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Guidelines </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Discussions </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Leaderboard </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Twitter </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
+                    <h5 class="text-uppercase"> Legal </h5>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Terms of Use </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> API Terms of Use </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Privacy Policy </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</footer>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  	<div class="modal-dialog modal-lg modal-dialog-centered">
+	    	<div class="modal-content">
+		      	<div class="modal-body ps-0 pt-0 pb-0">
+
+		      		<div class="row">
+		      			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+		      				<img src="assets/img/movie1.jpeg" class="img-fluid">
+		      			</div>
+		      			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 py-5">
+		      				<button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+
+		      				<div class="mt-5">
+		      					<p class="d-inline-block"> Info </p>
+		      					<i class="fa-solid fa-lock float-end"></i>
+		      					<hr class="m-0">
+		      				</div>
+
+		      				<div class="my-2">
+			      				<small> Primary? <i class="fa-solid fa-circle-check fa-2xs"></i> </small>
+			      			</div>
+
+			      			<div class="my-2">
+			      				<small class="smallfont"> Added By </small>
+			      				<p> itstimetomeetthemuppets </p>
+			      			</div>
+
+			      			<div class="my-2">
+			      				<small class="smallfont"> Size </small>
+			      				<p> 2000x2965  </p>
+			      			</div>
+
+			      			<div class="my-2">
+			      				<small class="smallfont"> Language </small>
+			      				<select class="form-select" aria-label="Default select example" disabled>
+								  	<option selected >English</option>
+								  	<option value="1">One</option>
+								  	<option value="2">Two</option>
+								  	<option value="3">Three</option>
+								</select>
+			      			</div>
+
+			      			<div class="mt-5">
+		      					<p class="d-inline-block"> Tagged People </p>
+		      					<i class="fa-solid fa-plus float-end"></i>
+		      					<hr class="m-0">
+		      				</div>
+
+		      				<div>
+		      					<p> No records have been added. </p>
+		      				</div>
+
+		      				<div>
+		      					<i class="fa-solid fa-right-long float-end"></i>
+		      				</div>
+
+		      			</div>
+		      		</div>
+
+		        	
+
+		      	</div>
+	    	</div>
+	  	</div>
+	</div>
+
+
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript">
+		const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+		const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+		const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+		const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+	</script>
+</body>
+</html>

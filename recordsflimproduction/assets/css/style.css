@@ -9,6 +9,12 @@ h1,h2,h3,h4,h5{
 	background-color: #0F172B;
 }
 
+.custom_btncolor{
+    background-color: #0F172B;
+    color: #FDEC03;
+}
+
+
 .carousel-inner .carousel-item img {
     height: 70vh;
     object-fit: cover;
@@ -42,11 +48,23 @@ h1,h2,h3,h4,h5{
     transition: all 1s ease 0s;
 }
 
+#joinsection{
+    background: url('../img/joinbanner.png') no-repeat center center fixed;
+    background-size: cover;
+}
 
+.primevideo img{
+    width: 35px;
+    height: 35px;
+}
 
+#moviedetailbanner{
+    background: linear-gradient(to bottom right,rgba(73.5, 10.5, 136.5, 1),rgba(73.5, 10.5, 136.5, 0.84)),url('../img/moviedetail1_banner.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 
-
-
+}
 
 
 

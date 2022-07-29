@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Record Flim Production </title>
+
+	<!-- Favicon -->
+	<link rel="icon" href="assets/img/favicon.png">
+	<link rel="apple-touch-icon" href="assets/img/favicon.png">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+	<!-- NAVBAR -->
+	<section>
+		<nav class="navbar navbar-expand-lg navbar-dark custom_bgcolor">
+		  	<div class="container">
+		    	<a class="navbar-brand" href="index.html">
+		    		<img src="assets/img/logo_white.png" width="60" height="40">
+		    	</a>
+		    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      		<span class="navbar-toggler-icon"></span>
+		    	</button>
+		    
+		    	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			      	<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			        	<li class="nav-item px-2">
+			          		<a class="nav-link active" aria-current="page" href="#">
+			          			Movie
+			          		</a>
+			        	</li>
+
+			        	<li class="nav-item px-2">
+			          		<a class="nav-link" href="#">TV Shows</a>
+			        	</li>
+
+			        	<li class="nav-item px-2">
+			          		<a class="nav-link" href="#"> Popular People </a>
+			        	</li>
+
+					    <li class="nav-item dropdown px-2">
+			          		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			            		More
+			          		</a>
+					        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					            <li><a class="dropdown-item" href="popular.html">Popular</a></li>
+					            <li><a class="dropdown-item" href="#">Now Playing</a></li>
+					            <li><a class="dropdown-item" href="#">Upcoming</a></li>
+					            <li><a class="dropdown-item" href="#">Top Rated</a></li>
+					            <li><hr class="dropdown-divider"></li>
+					            <li><a class="dropdown-item" href="#">Support</a></li>
+
+					        </ul>
+					    </li>
+			      	</ul>
+			      	<ul class="navbar-nav">
+			      		<li class="nav-item px-1">
+			      			<button type="button" class="btn btn-link nav-link" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Can't find a movie or TV show? Login to create it.">
+							  <i class="fa-solid fa-plus"></i>
+							</button>
+			      			
+			      		</li>
+			      		<li class="nav-item px-1 my-auto">
+			      			<button class="btn btn-sm btn-outline-light smallfont" type="button">EN</button>
+			      		</li>
+			      		<li class="nav-item px-1">
+			      			<a href="login.html" class="nav-link">
+			      				Login
+			      			</a>
+			      		</li>
+			      		<li class="nav-item px-1">
+			      			<a href="signup.html" class="nav-link">
+			      				Join Us
+			      			</a>
+			      		</li>
+			      		<li class="nav-item px-1">
+			      			<a href="" class="nav-link">
+			      				 <i class="fa-solid fa-magnifying-glass"></i>
+			      			</a>
+			      		</li>
+			      	</ul>
+		    	</div>
+		  	</div>
+		</nav>
+	</section>
+
+	<div class="container my-5">
+		<div class="row">
+			<div class="col-12">
+				<h4> Popular </h4>
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
+				
+				<div class="accordion shadow-sm mb-3 bg-body rounded">
+				  	<div class="accordion-item">
+				    	<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+				      		<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+				        		Sort
+				      		</button>
+				    	</h2>
+				    	<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+				      		<div class="accordion-body">
+				        		<p> Sort Results By </p>
+				        		<select class="form-select ">
+				        			<option> Popularity Descending </option>
+				        			<option> Popularity Ascending </option>
+				        			<option> Rating Descending </option>
+				        			<option> Rating Ascending </option>
+				        			<option> Release Date Descending </option>
+				        			<option> Release Date Ascending </option>
+				        			<option> Title (A-Z) </option>
+				        			<option> Title (Z-A) </option>
+				        		</select>
+				      		</div>
+				    	</div>
+				  	</div>
+				</div>
+
+				<div class="accordion shadow-sm mb-3 bg-body rounded">
+				  	<div class="accordion-item">
+				    	<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+				      		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+				        		Filters
+				      		</button>
+				    	</h2>
+					    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+					      	<div class="accordion-body">
+					        	<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+					      	</div>
+					    </div>
+				  	</div>
+				</div>
+
+				<div class="accordion shadow-sm mb-3 bg-body rounded">
+				  	<div class="accordion-item">
+				    	<h2 class="accordion-header" id="panelsStayOpen-headingThree">
+				      		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+				        		Where To Watch
+				      		</button>
+				    	</h2>
+					    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+					      	<div class="accordion-body">
+					        	<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+					      	</div>
+					    </div>
+				  	</div>
+				</div>
+
+				<div class="d-grid gap-2">
+					<button class="btn btn-secondary rounded-pill"> Search </button>
+				</div>
+
+			</div>
+			<div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12">
+				
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="custom_bgcolor py-5 text-white">
+		<div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                    <div class="text-center">
+                        <img src="assets/img/logo_white.png" alt="" class="img-fluid w-50 ">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <a href="signup.html" class="btn btn-light mt-3"> Join The Community </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
+                    <h5 class="text-uppercase"> The Basic </h5>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> About Company </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Contact Us </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none">Support Forums </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> API </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> System Status </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
+                    <h5 class="text-uppercase"> GET INVOLVED </h5>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Contribution Bible </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Add New Movie </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Add New TV Show </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
+                    <h5 class="text-uppercase"> Community </h5>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Guidelines </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Discussions </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Leaderboard </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Twitter </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
+                    <h5 class="text-uppercase"> Legal </h5>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Terms of Use </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> API Terms of Use </a>
+                        </li>
+                        <li class="list-group-item bg-transparent ps-0">
+                            <a href="" class="text-white text-decoration-none"> Privacy Policy </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</footer>
+
+
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript">
+		const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+		const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+		const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+		const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+	</script>
+</body>
+</html>
