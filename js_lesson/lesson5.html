@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5 </title>
+</head>
+<body>
+    <h1> Arithmetic  Operators </h1>
+    
+    <ul>
+        <li> + => Addition </li>
+        <script>
+            console.log(1+1);
+        </script>
+        <li> - => Subtraction </li>
+        <li> * => Multiplication </li>
+        <li> / => Division </li>
+        <li> % => Modulus </li>
+        <li> ++ => Increment </li>
+        <script>
+            var a = 1;
+            console.log(++a);
+        </script>
+        <li> -- => Decrement </li>
+    </ul>
+
+    <script>
+        var number1 = prompt("Enter First Number");
+        var number2 = prompt("Enter Second Number");
+
+        var total1 = parseInt(number1)+parseInt(number2);
+        var total2 = parseInt(number1)-parseInt(number2);
+        var total3 = parseInt(number1)*parseInt(number2);
+        var total4 = parseInt(number1)/parseInt(number2);
+        var total5 = parseInt(number1)%parseInt(number2);
+
+
+        document.write("First Number is: "+number1+"<br> Second Number is :"+number2+"<br>");
+        document.write("For Addition : "+total1+"<br>");
+        document.write("For Subtraction : "+total2+"<br>");
+        document.write("For Multiplication : "+total3+"<br>");
+        document.write("For Division : "+total4+"<br>");
+        document.write("For Modulus : "+total5+"<br>");
+
+    </script>
+</body>
+</html>
