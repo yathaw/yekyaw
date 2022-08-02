@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Lesson 6</title>
+
+	</head>
+	<body>
+		<h1> Looping </h1>
+
+		<p> Sequent </p> <!-- တစ်ခုပြီးမှတစ်ခုလုပ် -->
+		<p> Selection / Condional / Decision </p> <!-- Condition စစ်ပြီးမှလုပ် -->
+		<p> Interation </p> <!-- ထပ်ကာထပ်ကာလုပ် -->
+
+
+		<h2> Looping Type </h2>
+		<ul>
+			<li> 
+				for => သတ်မှတ်ထားတဲ့ အကြိမ်အရေအတွက်ထိ looping ပတ် (စမှတ် ဆုံးမှတ်ကောသိတယ်)
+			</li>
+			<li> 
+				for/in => object ကို looping ပတ်
+			</li>
+			<li> 
+				while => condition စစ်တာမှန်တဲ့အတွက်ကို looping ပတ်
+			</li>
+			<li> 
+				do-whilte => condition စစ်တာမှန်တဲ့အတွက်ကို looping ပတ်
+			</li>
+
+		</ul>
+
+		<h3> For Loop </h3>
+		<p id="demo1"></p>
+
+		<h3> For in </h3>
+		<p id="demo2"></p>
+
+		<h3> While </h3>
+		<p id="demo3"></p>
+
+		<h3> Do while </h3>
+		<p id="demo4"></p>
+
+		<script type="text/javascript">
+			var demo1 =""; var demo2 = ""; var demo3 = ""; var demo4 = "";
+			// For 
+			for(i=0; i<5; i++){
+				demo1  += "The number is "+i+"<br>";
+			}
+
+			document.getElementById('demo1').innerHTML = demo1;
+
+
+			// For in
+			var x;
+			var person = {
+				fathername : "U Mg Mg",
+				mothername : "Daw Aye Aye",
+				address : "Yangon"
+			}
+
+			for(x in person){
+				demo2 += person[x] + "<br>";
+			}
+
+			document.getElementById('demo2').innerHTML = demo2;
+
+
+			// While
+			var a = 1;
+			while(a <= 10){
+				demo3 += "<br> The number is "+a;
+				a++;
+			}
+			document.getElementById('demo3').innerHTML = demo3;
+
+			// Do While
+			var b = 1;
+			do{
+				demo4 += "<br> The number is "+b;
+				b++;
+			}while(b <= 10);
+
+			// document.getElementById('demo4').innerHTML = demo4;
+
+		</script>
+
+	</body>
+</html>
