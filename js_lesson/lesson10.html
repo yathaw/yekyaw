@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title> Lessonn 10 </title>
+
+	</head>
+	<body>
+		<h1>Array  </h1>
+
+
+
+		<script type="text/javascript">
+
+			// * Array ကို delete နဲ့ဖျက်လို့မရဘူး
+			// * Array ကို  equal နဲ့တိုက်စစ်လို့မရဘူး   
+
+			var fruits = ["Mango", "Apple"];
+
+			var languages = ["HTML", "CSS", "Bootstrap", "Javascript", "JQuery", "PHP", "Laravel"];
+
+			document.write(fruits[0]+"<br>");
+
+			// var array_name = array("Mango", "Apple");
+
+			// Access th full array
+			document.write(languages+"<br>");
+
+			// Array length Property
+			document.write(languages.length+"<br>");
+
+			// Sort Array  (Ascending Order)
+			document.write(languages.sort());
+			document.write("<br>");
+
+			// Sort Array (Descending Order)
+			document.write(languages.reverse());
+			document.write("<br>");
+
+			// Array to Strig
+			document.write(languages.toString());
+			document.write("<br>");
+
+			// Join Method
+			document.write(languages.join(" - "))
+			document.write("<br>");
+
+
+			// String to Array
+			var sta = 'a b c';
+			document.write(sta+"<br>");
+
+			sta.split(' ');
+			document.write(sta[0]+"<br>");
+
+
+			// Adding Array Elements
+			fruits.push("Orange");
+			document.write(fruits);
+			document.write("<br>");
+
+			// Remove Array Elements
+
+			languages.pop(); // Remove last element
+			document.write(languages);
+			document.write("<br>");
+
+			languages.shift(); // Remove first element
+			document.write(languages);
+			document.write("<br>");
+
+			languages.unshift("PHP"); // Add New Element
+			document.write(languages);
+			document.write("<br>");
+
+
+			// Changing Elements
+			languages[0] = "Bootstrap";
+			document.write(languages);
+			document.write("<br>");
+
+			// Delete Element
+			delete(languages[0]);
+			document.write(languages);
+			document.write("<br>");
+
+			// Splice method
+			// array_name.splice(array စယူမဲ့အခန်း, အခန်းအရေအတွက် / ဘယ်နှစ်ခန်းဖျက်မှာလဲ )
+			document.write("Splice");
+			document.write("<br>");
+
+			document.write(languages);
+			document.write("<br>");
+
+			var del_language1 = languages.splice(0,2);
+			document.write(del_language1);
+			document.write("<br>");
+			document.write("<br>");
+
+			// Slice method
+			// array_name.slice(array စယူမဲ့အခန်း, array အခန်းနံပါတ်)
+			document.write("Slice");
+			document.write("<br>");
+
+			document.write(languages);
+			document.write("<br>");
+
+			var del_language2 = languages.slice(1, 3);
+			document.write(del_language2);
+
+
+
+
+		</script>
+</html>
