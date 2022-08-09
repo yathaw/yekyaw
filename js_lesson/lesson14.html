@@ -5,9 +5,62 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Lesson 14 </title>
 </head>
-<body>
-	<h1> Math.round() </h1>
+<body onload="checkCookies()">
+	<h1> Action Events </h1>
 
-	
+	<h3 id="action1"> Click Event </h3>
+	<button onclick="document.getElementById('action1').style.color = 'red' "> Click Me </button>
+
+	<h3> Onload Event </h3>
+	<p id="action2"></p>
+
+	<h3> Onchange Event </h3>
+	Enter your name : <input type="text" id="name" name="name" onchange="myFunction()">
+
+	<h3> Onmoveover and Onmouseout Event </h3>
+	<div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: yellow; width: 200px;height: 30px;"></div>
+
+	<h3> addEventListener Method </h3>
+	<button id="action3"> Welcomme</button>
+
+	<script type="text/javascript">
+		// onLoad = window.alert("Hello");
+
+		function checkCookies(){
+			var text = "";
+
+			if(navigator.cookieEnable == true){
+				text ="Cookies are enabled.";
+			}else{
+				text = "Cookies are not enabled";
+			}
+
+			document.getElementById('action2').innerHTML = text;
+		}
+
+		function myFunction(){
+			var name = document.getElementById('name');
+			name.value = name.value.toUpperCase();
+		}
+
+		function mOver(obj){
+			obj.innerHTML = "ကျေးဇူးတင်ပါသည်။";
+		}
+
+		function mOut(obj){
+			obj.innerHTML = "ဒီနေရာကို mouse လာတင်ပါ။";
+		}
+
+		// addEventListener
+		// element.addEventListener(event, function, usecapture)
+		var btn = document.getElementById('action3');
+
+		function myFunction2(){
+			alert("Welcome");
+		}
+
+		btn.addEventListener("click", myFunction2);
+
+	</script>
 </body>
 </html>
