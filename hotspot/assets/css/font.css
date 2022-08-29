@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'NotoSans_Regular';
+    src: url('../fonts/NotoSans-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: 'NotoSans_Medium';
+    src: url('../fonts/NotoSans-Medium.ttf');
+}
+
+
+@font-face {
+    font-family: 'NotoSans_Bold';
+    src: url('../fonts/NotoSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'mmfont_bold';
+    src: url('../fonts/NotoSansMyanmar-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'mmfont';
+    src: url('../fonts/NotoSansMyanmar-Regular.ttf');
+}

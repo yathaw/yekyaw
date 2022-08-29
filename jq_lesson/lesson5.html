@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Lesson 5 </title>
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+
+	<style type="text/css">
+		.box{
+			width: 100px;
+			height: 100px;
+		}
+
+		.red{
+			background-color: red;
+		}
+		.blue{
+			background-color: blue;
+		}
+		.skyblue{
+			background-color: skyblue;
+		}
+		.green{
+			background-color: green;
+		}
+		.yellow{
+			background-color: yellow;
+		}
+		.blueviolet{
+			background-color: BlueViolet;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#btn1').click(function(){
+				$('#div1').animate({width: "300px", height: "300px"});
+			});
+			$('#btn2').click(function(){
+				$('#div2').animate({width: "300px", height: "300px"}, 5000);
+			});
+			$('#btn3').click(function(){
+				$('#div3').animate({width: "300px", height: "300px"}, 5000, 'swing');
+			});
+			$('#btn4').click(function(){
+				$('#div4').animate({width: "300px", height: "300px"}, 5000, 'linear');
+			});
+			$('#btn5').click(function(){
+				$('#div5').animate({width: "300px", height: "300px"}, 5000, 'linear',function(){
+						$('#p5').append('Animation Completed');
+				});
+			});
+
+			$('#btn6').click(function(){
+				$('#div6').animate({height: "300px", opacity: '0.4'}, 5000);
+				$('#div6').animate({width: "300px", opacity: '0.8'}, 5000);
+				$('#div6').animate({height: "100px", opacity: '0.4'}, 5000);
+				$('#div6').animate({width: "100px", opacity: '0.8'}, 5000);
+
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1> Animation </h1>
+	<h3> Apply Animation </h3>
+	<button id="btn1"> Click Me </button>
+	<div class="box red" id="div1"></div>
+	<br><br>
+
+	<h3> Set Animation Duration </h3>
+	<button id="btn2"> Click Me </button>
+	<div class="box blue" id="div2"></div>
+	<br><br>
+
+	<h3> Apply Easing/Transition Animation (Swing) </h3>
+	<button id="btn3"> Click Me </button>
+	<div class="box skyblue" id="div3"></div>
+	<br><br>
+
+	<h3> Apply Easing/Transition Animation (Linear) </h3>
+	<button id="btn4"> Click Me </button>
+	<div class="box green" id="div4"></div>
+	<br><br>
+
+	<h3> Callback Function on Animation Complete </h3>
+	<button id="btn5"> Click Me </button>
+	<div class="box yellow" id="div5"></div>
+	<p id="p5"></p>
+	<br><br>
+
+	<h3> Uses Queue Functionality </h3>
+	<button id="btn6"> Click Me </button>
+	<div class="box blueviolet" id="div6"></div>
+	<br><br>
+</body>
+</html>

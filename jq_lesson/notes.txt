@@ -1,0 +1,26 @@
+show()			=>	Display specified element(s).
+
+hide()			=>	Hide specified element(s).
+
+toggle()		=> 	Display hidden element(s) or hide visible element(s).
+
+fadeIn()		=>	Display specified element(s) by fading them to opaque.
+
+fadeOut()		=>	Hides specified element(s) by fading them to transparent.
+
+fadeToggle()	=>	Display or hide the specified element(s) by animating their opacity.
+
+fadeTo()		=>	Adjust the opacity of the specified element(s)
+
+slideUp()		=>	Hide specified element(s) with sliding up motion.
+
+slideDown()		=>	Display specified element(s) with sliding down motion.
+
+slideToggle()	=>	Display or hide specified element(s) with sliding motion.
+
+animate()		=>	Perform custom animation using element's style properties.
+
+stop()			=>	Used to stop an animation or effect before it is finished.
+
+chaining()		=>	chain together actions/methods.
+

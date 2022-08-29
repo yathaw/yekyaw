@@ -15,13 +15,16 @@
 	<p id="action2"></p>
 
 	<h3> Onchange Event </h3>
-	Enter your name : <input type="text" id="name" name="name" onchange="myFunction()">
+	Enter your name : <input type="text" id="name" name="name">
+	<button type="button" onclick="myFunction()"> Click Me </button>
 
 	<h3> Onmoveover and Onmouseout Event </h3>
 	<div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: yellow; width: 200px;height: 30px;"></div>
 
 	<h3> addEventListener Method </h3>
 	<button id="action3"> Welcomme</button>
+
+	<h4 id="Resultname"></h4>
 
 	<script type="text/javascript">
 		// onLoad = window.alert("Hello");
@@ -39,8 +42,14 @@
 		}
 
 		function myFunction(){
-			var name = document.getElementById('name');
-			name.value = name.value.toUpperCase();
+			var name = document.getElementById('name').value;
+
+			console.log(name);
+
+			// document.write(name);
+			// name.value = name.value.toUpperCase();
+			document.getElementById('Resultname').innerHTML = name;
+
 		}
 
 		function mOver(obj){

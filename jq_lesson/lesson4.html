@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Lesson 4 </title>
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<style type="text/css">
+		.panel{
+			display: none;
+			background-color: pink;
+			width: 100%;
+			text-align: center;
+			margin: auto;
+			padding: 50px 0px;
+			opacity: 0.5;
+		}
+
+		#slidedown, #slideup, #slidetoggle{
+			background-color: pink;
+			width: 100%;
+			text-align: center;
+			margin: auto;
+			font-size: 22px;
+			padding-top: 2px;
+		}
+	</style>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#slidedown').click(function(){
+				$('.panel').slideDown(1500);
+			});
+			$('#slideup').click(function(){
+				$('.panel').slideUp(1500);
+			});
+
+			$('#slidetoggle').click(function(){
+				$('.panel').slideToggle("slow");
+			});
+
+			$('#stopBtn').click(function(){
+				$('.panel').stop();
+			});
+
+			$('#chainingBtn').click(function(){
+				$('.panel').slideDown(1500).slideUp(1500);
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1> Slide Function </h1>
+
+	<button id="stopBtn"> Stop </button>
+	<button id="chainingBtn"> Chaining </button>
+
+
+	<div id="slidetoggle"> Click to Slidetoggle Panel </div>
+	<br> <br> 
+	<div id="slidedown"> Click to Slidedown Panel </div>
+	<div class="panel">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+	<div id="slideup"> Click to Slideup Panel </div>
+</body>
+</html>
