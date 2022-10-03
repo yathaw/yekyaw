@@ -6,5 +6,5 @@
     $dbname = "smileshop";
 
     $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
- 
+
 ?>
