@@ -176,6 +176,8 @@
     $(document).ready(function() {
         $('#searchInput').keyup(function(event) {
             var searchField = $('#searchInput').val();
+            var filetype = "stock";
+
             console.log(searchField);
 
             var url = 'getSearchdata.php';
@@ -183,7 +185,7 @@
             $.ajax({
                 type: 'POST',
                 url: url,
-                data: {keyword: searchField},
+                data: {keyword: searchField, filetype: filetype},
 
             }).done(function(data){
                 console.log(data);
