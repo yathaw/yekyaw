@@ -1,4 +1,11 @@
-<?php session_start(); ?>
+<?php 
+    session_start(); 
+    // var_dump($_SESSION['login_user']); die();
+
+    if(!$_SESSION['login_user']['id']){
+        header('location: index.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,14 +52,16 @@
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <a class="nav-link" href="index.html">
-                    <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
-                    <span>Mg Mg</span>
+                    <img class="img-profile rounded-circle" src="<?php echo $_SESSION['login_user']['photo'] ?>">
+                    <span> <?php echo $_SESSION['login_user']['username'] ?> </span>
                 </a>
             </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
+            <?php if($_SESSION['login_user']['role_id'] == 1){ ?>
+            
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <a class="nav-link" href="index.html">
@@ -60,6 +69,8 @@
                     <span>Dashboard</span>
                 </a>
             </li>
+
+            <?php } ?>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -71,6 +82,7 @@
                     <span>Sale</span></a>
             </li>
 
+            <?php if($_SESSION['login_user']['role_id'] == 1){ ?>
             <!-- Divider -->
             <hr class="sidebar-divider">
 
@@ -109,11 +121,13 @@
                     <span>Staff</span></a>
             </li>
 
+            <?php } ?>
+
             <!-- Divider -->
             <hr class="sidebar-divider">
 
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="logout.php">
                     <i class="fas fa-sign-out-alt"></i>
                     <span>Logout</span></a>
             </li>
